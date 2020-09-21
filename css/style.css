@@ -1,7 +1,23 @@
+
 @import "botao.css";
 @import "cabecalho.css";
 @import "formulario.css";
 @import "imagens.css";
 @import "lista-filmes.css";
 @import "reset.css";
-@import "flexbox.css";
+@import "rodape.css";
+
+/* Itens usado em mais de 1 import */
+
+html {
+    font-family: cursive;
+}
+
+.conteiner {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.invisivel {
+    display: none;
+}

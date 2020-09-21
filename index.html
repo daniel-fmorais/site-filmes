@@ -17,20 +17,24 @@
 			<h1 class="titulo-cabecalho">My Movies</h1>
 			<nav class="menu-superior">
 				<ul>
-					<a href="filmes.html"><li><img class="icone-nav"src="imagens/filme-nav.png">Filmes
-					</li></a>
+					<a href="filmes.html">
+						<li><img class="icone-nav" src="imagens/filme-nav.png">Filmes
+						</li>
+					</a>
 					<a href="series.html">
 						<li><img class="icone-nav" src="imagens/serie-nav.png">Séries
-					</li></a>
+						</li>
+					</a>
 					<a href="livros.html">
 						<li><img class="icone-nav" src="imagens/livro-nav.png">Livros
-					</li></a>
+						</li>
+					</a>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<main>
-		<div class="adicionar-item">
+		<section class="adicionar-item">
 			<button class="botao" id="botao-adicionar">Adicionar Filme</button>
 			<form id="formulario-adicionar" class="invisivel">
 				<label class="texto-form" for="filme">Qual filme você assistiu?</label>
@@ -67,7 +71,7 @@
 				</fieldset>
 				<input type="submit" value="Cadastrar Filme" class="botao">
 			</form>
-		</div>
+		</section>
 		<div class="conteiner">
 			<section class="listaFilmesUsuario">
 				<table>
@@ -81,25 +85,50 @@
 						</tr>
 					</thead>
 					<tbody id="tabela-filmes-usuario">
-						<tr class="filme">
-							<td class="nome-filme"></td>
-							<td class="genero-filme"></td>
-							<td class="data-filme"></td>
-							<td class="nota-usuario"></td>
-							<td class="nota-imdb"></td>
-						</tr>
+						<div class="filme">
+							<tr>
+								<td class="nome-filme"></td>
+								<td class="genero-filme"></td>
+								<td class="data-filme"></td>
+								<td class="nota-usuario"></td>
+								<td class="nota-imdb"></td>
+							</tr>
+							<tr class="invisivel">
+								<th>Atores</th>
+								<th>Diretor</th>
+								<th>Escrito por</th>
+								<th>Data Lançamento</th>
+								<th>Duração Filme</th>
+							</tr>
+							<tr class="invisivel">
+								<td class="atores-filme"></td>
+								<td class="diretor-filme"></td>
+								<td class="escritor-filme"></td>
+								<td class="lancamento-filme"></td>
+								<td class="duracao-filme"></td>
+							</tr>
+						</div>
 					</tbody>
 				</table>
 			</section>
 		</div>
 	</main>
-	<footer>
+	<footer class="rodape">
 		<div class="conteiner">
-
+			<p class="copyright">&copy; Copyright My Movies - 2020</p>
+			<nav>
+				<a class="rodape-nav" href="index.html">Home</a>
+				<a class="rodape-nav" href="filmes.html">Filmes</a>
+				<a class="rodape-nav" href="series.html">Séries</a>
+				<a class="rodape-nav" href="livros.html">Livros</a>
+				<a class="rodape-nav" href="contato.html">Contato</a>
+ 			</nav>
 		</div>
 	</footer>
+
 	<script src="js/adicinana-item.js"></script>
 	<script src="js/pesquisa-filme.js"></script>
+	
 </body>
 
 </html>

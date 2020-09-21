@@ -4,10 +4,13 @@
 }
 
 .titulo-cabecalho {
-    font-size: 1.5em;
+    font-size: 1.7em;
     text-align: center;
     margin-left: 5%;
-    line-height: 1.5em;
+    line-height: 1.3em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: whitesmoke;
 }
 
 .menu-superior li {
@@ -23,8 +26,22 @@
 .menu-superior a {
     text-decoration: none;
     letter-spacing: 0.1em;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 135%;
     color: black;
     width: 20%;
+}
+
+/* FlexBox */
+
+.cabecalho .conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-superior ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
