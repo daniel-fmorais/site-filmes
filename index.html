@@ -1,105 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-	<head>
-		<meta charset="utf-8">
-		<title>My Movies</title>
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="icon" href="imagens/icone.png" type="image/x-icon">
-	</head>
+<head>
+	<meta charset="utf-8">
+	<title>My Movies</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="imagens/icone.png" type="image/x-icon">
+</head>
 
-	<body>
-		<header class="cabecalho">
-			<div class="conteiner">
-				<a href="index.html"><img class="logo-cabecalho" src="imagens/fundo-cabecalho.jpg"
-						alt="Um projetor de filme antigo na esquerda da página"></a>
-				<nav>
-					<ul class="menu-superior">
-						<a href="filmes.html">
-							<li><img class="icone-nav" src="imagens/filme-nav.png">Filmes
-						</a></li>
-						<a href="series.html">
-							<li><img class="icone-nav" src="imagens/serie-nav.png">Séries
-						</a></li>
-						<a href="livros.html">
-							<li><img class="icone-nav" src="imagens/livro-nav.png">Livros
-						</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<main>
-			<div class="adicionar-item">
-				<button class="botao" id="botao-adicionar">Adicionar Filme</button>
-				<form id="formulario-adicionar" class="invisivel">
-					<label class="texto-form" for="filme">Qual filme você assistiu?</label>
-					<input type="text" nome="filme" id="filmePesquisado" class="campo-formulario"
-						placeholder="Pesquise aqui o filme" required>
+<body>
+	<header class="cabecalho">
+		<div class="conteiner">
+			<a href="index.html"><img class="logo-cabecalho" src="imagens/fundo-cabecalho.jpg"
+					alt="Um projetor de filme antigo na esquerda da página"></a>
+			<h1 class="titulo-cabecalho">My Movies</h1>
+			<nav class="menu-superior">
+				<ul>
+					<a href="filmes.html"><li><img class="icone-nav"src="imagens/filme-nav.png">Filmes
+					</li></a>
+					<a href="series.html">
+						<li><img class="icone-nav" src="imagens/serie-nav.png">Séries
+					</li></a>
+					<a href="livros.html">
+						<li><img class="icone-nav" src="imagens/livro-nav.png">Livros
+					</li></a>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="adicionar-item">
+			<button class="botao" id="botao-adicionar">Adicionar Filme</button>
+			<form id="formulario-adicionar" class="invisivel">
+				<label class="texto-form" for="filme">Qual filme você assistiu?</label>
+				<input type="text" nome="filme" id="filmePesquisado" class="campo-formulario"
+					placeholder="Pesquise aqui o filme" required>
 
-					<label class="texto-form" for="data">Que data você assistiu o filme?</label>
-					<input type="date" nome="data" id="data" class="campo-formulario">
+				<label class="texto-form" for="data">Que data você assistiu o filme?</label>
+				<input type="date" nome="data" id="data" class="campo-formulario">
 
-					<fieldset class="sistema-nota">
-						<legend class="texto-form">Qual foi a sua nota para o filme?</legend>
-						<div>
-							<label class="nota" for="radio-1">1</label>
-							<label class="nota" for="radio-2">2</label>
-							<label class="nota" for="radio-3">3</label>
-							<label class="nota" for="radio-4">4</label>
-							<label class="nota" for="radio-5">5</label>
-							<label class="nota" for="radio-6">6</label>
-							<label class="nota" for="radio-7">7</label>
-							<label class="nota" for="radio-8">8</label>
-							<label class="nota" for="radio-9">9</label>
-							<label class="nota" for="radio-10">10</label>
-						</div>
-						<input type="radio" value="1" id="radio-1" name="nota" required>
-						<input type="radio" value="2" id="radio-2" name="nota">
-						<input type="radio" value="3" id="radio-3" name="nota">
-						<input type="radio" value="4" id="radio-4" name="nota">
-						<input type="radio" value="5" id="radio-5" name="nota">
-						<input type="radio" value="6" id="radio-6" name="nota">
-						<input type="radio" value="7" id="radio-7" name="nota">
-						<input type="radio" value="8" id="radio-8" name="nota">
-						<input type="radio" value="9" id="radio-9" name="nota">
-						<input type="radio" value="10" id="radio-10" name="nota">
-					</fieldset>
-					<input type="submit" value="Cadastrar Filme" class="botao">
-				</form>
-			</div>
-			<div class="conteiner">
-				<section class="listaFilmesUsuario">
-					<table>
-						<thead>
-							<tr>
-								<th>Filme</th>
-								<th>Genero</th>
-								<th>Data que assistiu</th>
-								<th>Sua nota</th>
-								<th>Nota IMDB</th>
-							</tr>
-						</thead>
-						<tbody id="tabela-filmes-usuario">
-							<tr class="filme">
-								<td class="nome-filme"></td>
-								<td class="genero-filme"></td>
-								<td class="data-filme"></td>
-								<td class="nota-usuario"></td>
-								<td class="nota-imdb"></td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-			</div>
-		</main>
-		<footer>
-			<div class="conteiner">
+				<fieldset class="sistema-nota">
+					<legend class="texto-form">Qual foi a sua nota para o filme?</legend>
+					<div>
+						<label class="nota" for="radio-1">1</label>
+						<label class="nota" for="radio-2">2</label>
+						<label class="nota" for="radio-3">3</label>
+						<label class="nota" for="radio-4">4</label>
+						<label class="nota" for="radio-5">5</label>
+						<label class="nota" for="radio-6">6</label>
+						<label class="nota" for="radio-7">7</label>
+						<label class="nota" for="radio-8">8</label>
+						<label class="nota" for="radio-9">9</label>
+						<label class="nota" for="radio-10">10</label>
+					</div>
+					<input type="radio" value="1" id="radio-1" name="nota" required>
+					<input type="radio" value="2" id="radio-2" name="nota">
+					<input type="radio" value="3" id="radio-3" name="nota">
+					<input type="radio" value="4" id="radio-4" name="nota">
+					<input type="radio" value="5" id="radio-5" name="nota">
+					<input type="radio" value="6" id="radio-6" name="nota">
+					<input type="radio" value="7" id="radio-7" name="nota">
+					<input type="radio" value="8" id="radio-8" name="nota">
+					<input type="radio" value="9" id="radio-9" name="nota">
+					<input type="radio" value="10" id="radio-10" name="nota">
+				</fieldset>
+				<input type="submit" value="Cadastrar Filme" class="botao">
+			</form>
+		</div>
+		<div class="conteiner">
+			<section class="listaFilmesUsuario">
+				<table>
+					<thead>
+						<tr>
+							<th>Filme</th>
+							<th>Genero</th>
+							<th>Data que assistiu</th>
+							<th>Sua nota</th>
+							<th>Nota IMDB</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-filmes-usuario">
+						<tr class="filme">
+							<td class="nome-filme"></td>
+							<td class="genero-filme"></td>
+							<td class="data-filme"></td>
+							<td class="nota-usuario"></td>
+							<td class="nota-imdb"></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<div class="conteiner">
 
-			</div>
-		</footer>
-		<script src="js/adicinana-item.js"></script>
-		<script src="js/pesquisa-filme.js"></script>
-	</body>
+		</div>
+	</footer>
+	<script src="js/adicinana-item.js"></script>
+	<script src="js/pesquisa-filme.js"></script>
+</body>
 
 </html>

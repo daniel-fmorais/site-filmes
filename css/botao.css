@@ -1,7 +1,6 @@
-.menu-superior :hover {
+.menu-superior a :hover {
     background: darkkhaki;
     cursor: pointer;
-    transition: 0.5s;
 }
 
 .botao {
@@ -9,14 +8,15 @@
     margin: 3% 0;
     padding: 1% 4%;
     border-radius: 15px;
-    font-size: 17px;
-    letter-spacing: 1px;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
     font-weight: bold;
     background: rgb(226, 81, 81);
+    transition: 1s;
 }
 
 .botao:hover {
     background: darkkhaki;
     border-radius: 20px;
-    transition: 0.5s;
+    transition: 1s;
 }
