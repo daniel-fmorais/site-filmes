@@ -1,0 +1,24 @@
+.listaFilmesUsuario {
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+}
+
+.listaFilmesUsuario table {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.listaFilmesUsuario th {
+    border: black solid 2px;
+    padding: 1% 0;
+}
+
+.listaFilmesUsuario td {
+    border: black solid 2px;
+    padding: 1% 0;
+    
+}
+
+

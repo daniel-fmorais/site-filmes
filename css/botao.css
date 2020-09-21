@@ -1,0 +1,22 @@
+.menu-superior :hover {
+    background: darkkhaki;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao {
+    cursor: pointer;
+    margin: 3% 0;
+    padding: 1% 4%;
+    border-radius: 15px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background: rgb(226, 81, 81);
+}
+
+.botao:hover {
+    background: darkkhaki;
+    border-radius: 20px;
+    transition: 0.5s;
+}

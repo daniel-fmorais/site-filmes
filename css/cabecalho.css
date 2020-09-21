@@ -1,0 +1,27 @@
+.cabecalho {
+    background: rgb(89, 71, 87);
+    height: 100px;
+}
+
+.menu-superior {
+    width: 940px;
+    margin: 0 auto; 
+    padding-top: 2.5%;
+}
+
+.menu-superior li {
+    display: inline;
+    padding: 1% 2%;
+    margin: 0 3%;
+    border: 3px blanchedalmond outset;
+    background: whitesmoke;
+    border-radius: 100%;
+}
+
+.menu-superior a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 135%;
+    color: black;
+}

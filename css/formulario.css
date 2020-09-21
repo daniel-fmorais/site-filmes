@@ -1,0 +1,36 @@
+.invisivel {
+    display: none;
+}
+
+.adicionar-item {
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.formulario-adicionar {
+    padding: 3% 0;
+}
+
+.texto-form {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+
+.campo-formulario {
+    display:block;
+    margin: 1% auto 3% auto;
+    width: 40%;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.nota {
+    margin: 0px 8px;
+}
+
+.sistema-nota input{
+    margin: 0 5.8px;
+}
