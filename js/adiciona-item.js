@@ -8,10 +8,10 @@ botaoAdicionar.addEventListener("click", function() {
     if (!formularioVisivel) {
         formulario.classList.remove("invisivel");
         formularioVisivel = true;
+        pesquisaFilme.focus();
     }
     else {
         formulario.classList.add("invisivel");
         formularioVisivel = false;
     }
 });
-
