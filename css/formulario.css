@@ -22,10 +22,14 @@
     font-size: 15px;
 }
 
-.nota {
-    margin: 0px 8px;
+.notas {
+    display: flex;
+    justify-content: center;
 }
 
-.sistema-nota input{
-    margin: 0 5.8px;
+.nota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1%;
 }
