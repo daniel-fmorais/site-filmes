@@ -9,17 +9,17 @@
 }
 
 .texto-form {
-    margin: 10px 0;
-    font-size: 1.5em;
+    margin: 2% 0;
+    font-size: 1.5rem;
 }
 
 .campo-formulario {
     display:block;
     margin: 1% auto 3% auto;
     width: 40%;
-    padding: 5px;
+    padding: 1%;
     text-align: center;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .notas {
